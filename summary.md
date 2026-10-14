@@ -811,3 +811,13 @@ usuario será la primera comprobación funcional.
 - This is local preparation for an owner-approved courtesy contribution, not a
   release. No public fork, branch, PR or message has been posted. Exact game and
   companion framework draft messages await the owner's approval.
+
+### Publication approval and dependency availability
+
+- The owner approved both draft contributions, requested a shorter game-PR closing
+  based on the mod's existing local testing, and approved the assignment exception
+  because this account cannot assign TechnicallyComputers in the target repositories.
+- Framework draft: https://github.com/novapowers0/psxrecomp/pull/1, targeting
+  `rework-master`. Its exact pinned commit was fetched successfully through the
+  project's unchanged `novapowers0/psxrecomp` remote before publishing the game
+  contribution. The framework fork remains intact; no changes were merged.

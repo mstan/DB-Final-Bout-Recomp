@@ -43,9 +43,10 @@ Framework merge `237ef8dc` includes the reviewed retained-composite scale fix fr
 upstream PR #665, which is still awaiting upstream integration. LAN/direct-IP
 scope is preserved by keeping ICE disabled in the title build.
 
-The framework merge is currently a local preparation, not a published pin.
-Do not treat this draft as a released dependency set until its companion framework
-branch is available and reviewed. First-run generation must refresh BIOS/game C
+The framework merge is published in the [companion framework draft](https://github.com/novapowers0/psxrecomp/pull/1),
+and its pinned commit is fetchable through this project's framework remote.
+Do not treat this draft as a released dependency set until the companion framework
+changes are reviewed. First-run generation must refresh BIOS/game C
 and native overlay caches with that framework. The local setup-host configure
 reports a stale OpenBIOS emitter stamp after preserving the fork's config
 additions; the guard has not been suppressed. BIOS regeneration remains part of

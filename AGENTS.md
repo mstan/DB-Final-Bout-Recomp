@@ -6,8 +6,8 @@ comandos correctos. Complementa (no reemplaza) a `summary.md`, `ANALISIS_CRASHES
 y `SESSION_ANALYSIS.md`.
 
 Local preparation note (2026-10-14): an opt-in OpenGL native-widescreen contribution
-and companion framework refresh are prepared, with no public posting or gameplay
-acceptance yet. Read `docs/WIDESCREEN.md` and the latest `summary.md` entry for the
+and companion framework refresh are prepared, with a companion framework draft
+and no gameplay acceptance yet. Read `docs/WIDESCREEN.md` and the latest `summary.md` entry for the
 new dependency pins and regeneration prerequisites. The `--profile-only` option
 of `tools/verify_offline.py` checks source wiring only; the full offline verifier
 below remains required for generated release/cache acceptance. Historical
