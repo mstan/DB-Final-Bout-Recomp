@@ -784,3 +784,30 @@ usuario será la primera comprobación funcional.
   durante el sellado local, por lo que el runtime las marca autoritativas, tal
   como documenta `rnet_rollback.c`. No se alteró la lógica de rollback para
   satisfacer expectativas obsoletas; queda como tarea upstream separada.
+
+## 2026-10-14 — Local adaptive-widescreen contribution preparation
+
+- Prepared an opt-in SLUS-00493 OpenGL native-wide title mod with fixed 16:9 or
+  adaptive 4:3–21:9, guarded HUD/background packet recognition and a generated
+  entry hook at `0x80028D80`. The generic stretch package is excluded from the
+  shipped catalog. Guest projection, RAM and culling are unchanged.
+- Preserved software/4:3/1x defaults, the original overlay roots, SIO no-TX-gate
+  compatibility and LAN/direct-IP scope (`RNET_ENABLE_ICE=OFF`). Packaging now
+  includes the title plugin source and preloaded manifest.
+- Locally refreshed the existing framework fork, preserving its three custom
+  patches. Framework merge `237ef8dca7e6ce19b8654f569a8176d297072427` includes
+  landed upstream `f9c287f5` plus the reviewed retained-composite scale correction
+  from upstream PR #665 (still open). Two routine merge conflicts retained both
+  parser options and all mod source entries. UI pin: `41c88ffe`; nested net and
+  rollback-engine pins are recorded in `framework_pins.txt`.
+- Native Windows Clang 22 normal setup-host build passed with two jobs. Mod
+  catalog staging passed (one title package, six framework packages); source
+  profile verification passed. The plugin also compiled for both target variants.
+  The full offline verifier was run and stops at missing deployed artifacts;
+  generated-game builds, the full PGXP executable and gameplay are unqualified.
+- The preserved fork config changes the BIOS emitter fingerprint. Its staleness
+  warning remains enabled; regenerate BIOS/game C and overlay caches before the
+  short OpenGL resize/fight check described in `docs/WIDESCREEN.md`.
+- This is local preparation for an owner-approved courtesy contribution, not a
+  release. No public fork, branch, PR or message has been posted. Exact game and
+  companion framework draft messages await the owner's approval.
