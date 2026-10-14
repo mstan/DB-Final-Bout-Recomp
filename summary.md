@@ -821,3 +821,6 @@ usuario será la primera comprobación funcional.
   `rework-master`. Its exact pinned commit was fetched successfully through the
   project's unchanged `novapowers0/psxrecomp` remote before publishing the game
   contribution. The framework fork remains intact; no changes were merged.
+- Game draft: https://github.com/novapowers0/DB-Final-Bout-Recomp/pull/2, targeting
+  `master`, with the owner's requested shorter closing. Both contributions are
+  published as drafts; this does not add generated-game or gameplay acceptance.
